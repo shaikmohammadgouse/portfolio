@@ -86,6 +86,18 @@
     .contact a:hover {
       background-color: #357ABD;
     }
+    /* New styles for clickable projects */
+    .project a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .project h3 {
+      color: #4A90E2;
+      transition: color 0.3s ease;
+    }
+    .project:hover h3 {
+      color: #357ABD;
+    }
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
@@ -111,18 +123,24 @@
     <h2>Projects</h2>
     <div class="projects">
       <div class="project">
-        <img src="https://via.placeholder.com/600x400" alt="Hotel Booking Analysis">
-        <h3>Hotel Booking Analysis</h3>
+        <a href="https://github.com/shaikmohammadgouse/hotel-booking-analysis/blob/main/HOTEL_BOOKING_ANALYSIS_.ipynb" target="_blank">
+          <img src="https://via.placeholder.com/600x400" alt="Hotel Booking Analysis">
+          <h3>Hotel Booking Analysis</h3>
+        </a>
         <p>Analyzed hotel booking data to uncover patterns and improve customer experience. Tools used: Python, Pandas, Matplotlib. <br> <strong>Key Insight:</strong> Identified peak booking periods and cancellation trends to optimize resource allocation.</p>
       </div>
       <div class="project">
-        <img src="https://via.placeholder.com/600x400" alt="Vrinda Store Sales Optimization">
-        <h3>Vrinda Store Sales Optimization</h3>
+        <a href="https://github.com/shaikmohammadgouse/vrinda-store-data-analysis-using-excel" target="_blank">
+          <img src="https://via.placeholder.com/600x400" alt="Vrinda Store Sales Optimization">
+          <h3>Vrinda Store Sales Optimization</h3>
+        </a>
         <p>Optimized sales performance using Excel, improving decision-making with interactive dashboards. <br> <strong>Key Insight:</strong> Increased sales by identifying underperforming products and seasonal trends.</p>
       </div>
       <div class="project">
-        <img src="https://via.placeholder.com/600x400" alt="IT Spend Analysis">
-        <h3>IT Spend Analysis</h3>
+        <a href="https://github.com/shaikmohammadgouse/IT-Spend-Analysis-Project/blob/main/IT%20Spend%20Analysis%20Project.pdf" target="_blank">
+          <img src="https://via.placeholder.com/600x400" alt="IT Spend Analysis">
+          <h3>IT Spend Analysis</h3>
+        </a>
         <p>Developed a Power BI dashboard to track and visualize IT expenditures, aiding in budget allocation. <br> <strong>Key Insight:</strong> Reduced unnecessary expenses by 15% through improved spend tracking.</p>
       </div>
     </div>
