@@ -1,17 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaik Mohammad Gouse - Data Analyst Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: #4A90E2;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.3em;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s forwards;
+    }
+    section:nth-child(even) {
+      background-color: #ffffff;
+    }
+    section:nth-child(odd) {
+      background-color: #e8f1fd;
+    }
+    h2 {
+      color: #4A90E2;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .project, .skill {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .project img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      color: white;
+      background-color: #4A90E2;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .contact a:hover {
+      background-color: #357ABD;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-    <h1>My Portfolio</h1>
+  <header>
+    <h1>Shaik Mohammad Gouse</h1>
+    <p>Data Analyst | SQL | Power BI | Python | Excel | Visualization</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a Data Analyst with expertise in SQL, Python, Power BI, and Excel. I am passionate about analyzing data to derive actionable insights and solve business problems. With hands-on experience in real-world projects like Hotel Booking Analysis and IT Spend Analysis, I strive to help organizations make data-driven decisions.</p>
+  </section>
+
+  <section id="projects">
     <h2>Projects</h2>
-    <ul>
-        <li><a href="https://github.com/shaikmohammadgouse/hotel-booking-analysis">Hotel Booking Analysis</a>: Analyzed hotel booking data to identify key trends and insights.</li>
-        <li><a href="https://github.com/shaikmohammadgouse/vrinda-store-data-analysis-using-excel">Vrinda Store Data Analysis</a>: Utilized Excel to analyze store data and generate actionable reports.</li>
-        <li><a href="https://github.com/shaikmohammadgouse/IT-Spend-Analysis-Project">IT Spend Analysis Project</a>: Conducted an in-depth analysis of IT spending to optimize budget allocation.</li>
-    </ul>
+    <div class="projects">
+      <div class="project">
+        <img src="https://via.placeholder.com/600x400" alt="Hotel Booking Analysis">
+        <h3>Hotel Booking Analysis</h3>
+        <p>Analyzed hotel booking data to uncover patterns and improve customer experience. Tools used: Python, Pandas, Matplotlib. <br> <strong>Key Insight:</strong> Identified peak booking periods and cancellation trends to optimize resource allocation.</p>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/600x400" alt="Vrinda Store Sales Optimization">
+        <h3>Vrinda Store Sales Optimization</h3>
+        <p>Optimized sales performance using Excel, improving decision-making with interactive dashboards. <br> <strong>Key Insight:</strong> Increased sales by identifying underperforming products and seasonal trends.</p>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/600x400" alt="IT Spend Analysis">
+        <h3>IT Spend Analysis</h3>
+        <p>Developed a Power BI dashboard to track and visualize IT expenditures, aiding in budget allocation. <br> <strong>Key Insight:</strong> Reduced unnecessary expenses by 15% through improved spend tracking.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">
+        <h3>Data Analysis Tools</h3>
+        <p>Power BI, Excel, Tableau</p>
+      </div>
+      <div class="skill">
+        <h3>Programming Languages</h3>
+        <p>Python (Pandas, NumPy, Matplotlib, Seaborn, Plotly), SQL</p>
+      </div>
+      <div class="skill">
+        <h3>Database Management</h3>
+        <p>PostgreSQL, MySQL</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me for collaboration or opportunities.</p>
+    <div class="contact">
+      <a href="mailto:gouseshaik563@gmail.com">Email Me</a>
+      <a href="https://www.linkedin.com/in/shaikmohammadgouse" target="_blank">LinkedIn</a>
+      <a href="https://github.com/shaikmohammadgouse" target="_blank">GitHub</a>
+    </div>
+  </section>
 </body>
 </html>
