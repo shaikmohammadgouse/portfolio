@@ -15,11 +15,11 @@
       overflow-x: hidden;
     }
     header {
-      background-image: url('https://i.imgur.com/TzjmJXe.png'); /* Replace with your image URL */
+      background-image: url('https://i.imgur.com/TzjmJXe.png');
       background-size: cover;
       background-position: center;
       color: white;
-      padding: 100px 20px; /* Increased padding for better visibility */
+      padding: 100px 20px;
       text-align: center;
       animation: fadeIn 1s ease-in;
       position: relative;
@@ -31,7 +31,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+      background-color: rgba(0, 0, 0, 0.5);
       z-index: 1;
     }
     header h1, header p {
@@ -92,28 +92,22 @@
       text-align: center;
     }
     .contact a {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       margin: 10px;
       padding: 10px 20px;
       color: white;
       background-color: #4A90E2;
       text-decoration: none;
       border-radius: 5px;
+      transition: background-color 0.3s ease;
     }
     .contact a:hover {
       background-color: #357ABD;
     }
-    /* New styles for clickable projects */
-    .project a {
-      text-decoration: none;
-      color: inherit;
-    }
-    .project h3 {
-      color: #4A90E2;
-      transition: color 0.3s ease;
-    }
-    .project:hover h3 {
-      color: #357ABD;
+    .contact a i {
+      margin-right: 8px;
     }
     @keyframes fadeIn {
       from { opacity: 0; }
@@ -133,7 +127,7 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I am a aspiring Data Analyst with expertise in SQL, Python, Power BI, and Excel. I am passionate about analyzing data to derive actionable insights and solve business problems. With hands-on experience in real-world projects like Hotel Booking Analysis and IT Spend Analysis, I strive to help organizations make data-driven decisions.</p>
+    <p>I am an aspiring Data Analyst with expertise in SQL, Python, Power BI, and Excel. I am passionate about analyzing data to derive actionable insights and solve business problems. With hands-on experience in real-world projects like Hotel Booking Analysis and IT Spend Analysis, I strive to help organizations make data-driven decisions.</p>
   </section>
 
   <section id="projects">
@@ -144,7 +138,7 @@
           <img src="https://via.placeholder.com/600x400" alt="Hotel Booking Analysis">
           <h3>Hotel Booking Analysis</h3>
         </a>
-        <p>Analyzed hotel booking data to uncover patterns and improve customer experience. Tools used: Python, Pandas, Matplotlib,Seaborn,Plotly. <br> <strong>Key Insight:</strong> Identified peak booking periods and cancellation trends to optimize resource allocation.</p>
+        <p>Analyzed hotel booking data to uncover patterns and improve customer experience. Tools used: Python, Pandas, Matplotlib, Seaborn, Plotly. <br> <strong>Key Insight:</strong> Identified peak booking periods and cancellation trends to optimize resource allocation.</p>
       </div>
       <div class="project">
         <a href="https://github.com/shaikmohammadgouse/vrinda-store-data-analysis-using-excel" target="_blank">
@@ -185,9 +179,10 @@
     <h2>Contact</h2>
     <p>Feel free to reach out to me for opportunities.</p>
     <div class="contact">
-      <a href="mailto:gouseshaik563@gmail.com">Email Me</a>
-      <a href="https://www.linkedin.com/in/shaikmohammadgouse" target="_blank">LinkedIn</a>
-      <a href="https://github.com/shaikmohammadgouse" target="_blank">GitHub</a>
+      <a href="mailto:gouseshaik563@gmail.com"><i>📧</i> Email Me</a>
+      <a href="https://www.linkedin.com/in/shaikmohammadgouse" target="_blank"><i>🔗</i> LinkedIn</a>
+      <a href="https://github.com/shaikmohammadgouse" target="_blank"><i>🐙</i> GitHub</a>
+      <a href="tel:+919121899897"><i>📞</i> +91 91218 99897</a>
     </div>
   </section>
 </body>
