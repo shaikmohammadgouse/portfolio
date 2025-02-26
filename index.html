@@ -1,35 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shaik Mohammad Gouse - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaik Mohammad Gouse - Data Analyst Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      background-image: url('https://i.imgur.com/TzjmJXe.png');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+      position: relative;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 2;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.3em;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s forwards;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .project {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .project img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Shaik Mohammad Gouse</h1>
-        <p>Data Analyst | SQL | Power BI | Python | Excel | Visualization</p>
-    </header>
-    <section class="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project">
-                <img src="https://www.dataanalysisimages.com/hotel_booking.png" alt="Hotel Booking Analysis">
-                <h3><a href="#">Hotel Booking Analysis</a></h3>
-                <p>Analyzed hotel booking data to improve business strategies using Python and visualization tools.</p>
-            </div>
-            <div class="project">
-                <img src="https://www.dataanalysisimages.com/sales_optimization.png" alt="Vrinda Store Sales Optimization">
-                <h3><a href="#">Vrinda Store Sales Optimization</a></h3>
-                <p>Used Excel to analyze sales trends and optimize inventory management.</p>
-            </div>
-            <div class="project">
-                <img src="https://www.dataanalysisimages.com/it_spend.png" alt="IT Spend Analysis">
-                <h3><a href="#">IT Spend Analysis</a></h3>
-                <p>Developed a Power BI dashboard to track IT expenditure and reduce unnecessary costs.</p>
-            </div>
-        </div>
-    </section>
+  <header>
+    <h1>Shaik Mohammad Gouse</h1>
+    <p>Data Analyst | SQL | Power BI | Python | Excel | Visualization</p>
+  </header>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <a href="https://github.com/shaikmohammadgouse/hotel-booking-analysis/blob/main/HOTEL_BOOKING_ANALYSIS_.ipynb" target="_blank">
+          <img src="https://via.placeholder.com/600x400" alt="Hotel Booking Analysis">
+          <h3>Hotel Booking Analysis</h3>
+        </a>
+        <p>Analyzed hotel booking data to uncover patterns and improve customer experience. Tools used: Python, Pandas, Matplotlib, Seaborn, Plotly. <br> <strong>Key Insight:</strong> Identified peak booking periods and cancellation trends to optimize resource allocation.</p>
+      </div>
+      <div class="project">
+        <a href="https://github.com/shaikmohammadgouse/vrinda-store-data-analysis-using-excel" target="_blank">
+          <img src="https://via.placeholder.com/600x400" alt="Vrinda Store Sales Optimization">
+          <h3>Vrinda Store Sales Optimization</h3>
+        </a>
+        <p>Optimized sales performance using Excel, improving decision-making with interactive dashboards. <br> <strong>Key Insight:</strong> Increased sales by identifying underperforming products and seasonal trends.</p>
+      </div>
+      <div class="project">
+        <a href="https://github.com/shaikmohammadgouse/IT-Spend-Analysis-Project/blob/main/IT%20Spend%20Analysis%20Project.pdf" target="_blank">
+          <img src="https://via.placeholder.com/600x400" alt="IT Spend Analysis">
+          <h3>IT Spend Analysis</h3>
+        </a>
+        <p>Developed a Power BI dashboard to track and visualize IT expenditures, aiding in budget allocation. <br> <strong>Key Insight:</strong> Reduced unnecessary expenses by 15% through improved spend tracking.</p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
